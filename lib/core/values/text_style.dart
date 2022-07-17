@@ -14,7 +14,6 @@ const styleNameApp = TextStyle(
 const styleMenu = TextStyle(
   fontFamily: "Quicksand",
   fontSize: 18,
-  color: Colors.black87,
 );
 
 /// Title page
@@ -34,7 +33,6 @@ const styleTextTitleSetting = TextStyle(
 );
 
 const styleTextSetting = TextStyle(
-  color: Colors.black,
   fontSize: 14,
   fontFamily: "Quicksand",
 );

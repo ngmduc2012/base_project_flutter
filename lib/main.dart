@@ -20,6 +20,9 @@ void main() async {
       // DevicePreview(
       //     builder: (context) =>
       GetMaterialApp(
+    ///Giao diện tối.
+    darkTheme: ThemeData.dark(),
+    themeMode: ThemeMode.system,
     initialBinding: WelcomeBinding(),
     debugShowCheckedModeBanner: false,
     getPages: AppPages.pages,
