@@ -47,13 +47,13 @@ class _ImageInputState extends State<ImageInput> {
         maxHeight: 240,
         maxWidth: 240,
         aspectRatio: CropAspectRatio(ratioX: 1, ratioY: 1),
-        androidUiSettings: AndroidUiSettings(
+        androidUiSettings: const AndroidUiSettings(
           toolbarTitle: 'Cropper',
           toolbarColor: Colors.deepOrange,
           toolbarWidgetColor: Colors.white,
           initAspectRatio: CropAspectRatioPreset.original,
         ),
-        iosUiSettings: IOSUiSettings(
+        iosUiSettings: const IOSUiSettings(
           minimumAspectRatio: 1.0,
         ));
     if (image == null) {
@@ -76,19 +76,19 @@ class _ImageInputState extends State<ImageInput> {
       },
       child: Container(
         height: 52,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
           border: Border(
             bottom: BorderSide(color: Colors.black12, width: 0.5),
           ),
         ),
-        padding: EdgeInsets.symmetric(horizontal: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
               widget.label,
-              style: TextStyle(color: Colors.black87, fontSize: 15.5),
+              style: const TextStyle(color: Colors.black87, fontSize: 15.5),
             ),
             _image != null
                 ? Image.file(

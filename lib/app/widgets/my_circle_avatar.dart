@@ -13,7 +13,7 @@ class MyCircleAvatar extends StatelessWidget {
       width: size,
       height: size,
       child: avatar == null
-          ? SizedBox()
+          ? const SizedBox()
           : Image.memory(
               base64Decode(avatar!),
               fit: BoxFit.fill,

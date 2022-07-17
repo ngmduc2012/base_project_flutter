@@ -47,7 +47,7 @@ class _QrCodeScannerState extends State<QrCodeScanner> {
             fit: StackFit.expand,
             children: [
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.black,
                   backgroundBlendMode: BlendMode.dstOut,
                 ),
@@ -55,7 +55,7 @@ class _QrCodeScannerState extends State<QrCodeScanner> {
               Align(
                 alignment: Alignment.topCenter,
                 child: Container(
-                  constraints: BoxConstraints(
+                  constraints: const BoxConstraints(
                     maxWidth: 450,
                   ),
                   margin: const EdgeInsets.only(top: 150, left: 40, right: 40),
@@ -133,7 +133,7 @@ class _QrCodeScannerState extends State<QrCodeScanner> {
                   padding: const EdgeInsets.symmetric(horizontal: 24),
                   child: Text(
                     AppTranslations.qrCodeGuide,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                       color: Colors.white,
                       fontWeight: FontWeight.w600,
@@ -151,7 +151,7 @@ class _QrCodeScannerState extends State<QrCodeScanner> {
             alignment: Alignment.topCenter,
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 60,
                 ),
                 Padding(
@@ -160,7 +160,7 @@ class _QrCodeScannerState extends State<QrCodeScanner> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       IconButton(
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.close,
                             color: Colors.white,
                           ),
@@ -169,14 +169,14 @@ class _QrCodeScannerState extends State<QrCodeScanner> {
                           }),
                       Text(
                         AppTranslations.qrCodeScanner,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 20,
                           color: Colors.white,
                           fontWeight: FontWeight.w900,
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      IconButton(
+                      const IconButton(
                           icon: Icon(
                             Icons.help,
                             color: Colors.white,
