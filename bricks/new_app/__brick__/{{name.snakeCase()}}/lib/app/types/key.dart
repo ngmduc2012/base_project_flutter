@@ -1,0 +1,5 @@
+ const USER_CONTROLLER = "USER_CONTROLLER";
+
+ const COLOR = "COLOR";
+
+ const THEME = "THEME";
