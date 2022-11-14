@@ -12,6 +12,15 @@ Run:
 
 1. Cách khởi chạy trực tiếp: (*)
 
+B1: Cài đặt
+dart pub global activate mason_cli
+Đảm bảo máy đã cài dart 
+
+B2: Cập nhập lại mason
+Run: mason upgrade
+Run: mason get
+
+B3: Khởi tạo
 run: mason make new_app -o test
 (tạo app từ brick new_app tại tư thục test)
 
